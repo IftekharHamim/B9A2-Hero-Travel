@@ -6,6 +6,7 @@
     --dark-color:#131318;
     --deepdark-color:#5A5A5D;
     --rgb-color:rgba(19, 19, 24, 0.50);
+    --white:#fff;
 }
 
 *{
@@ -72,12 +73,61 @@ body{
     font-weight: 700;
 }
 
+.navbar .hamber_btn{
+    display: none
+}
+                     /* navbar-section-start */
+
+
+                     /* banner-section-start */
 .banner_section{
-    background-image:;
+    background-image:url(/Images/banner\ img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 3.75rem;
     height: 600px;
+    position: relative;
 }
 
+.banner_text{
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
 
+.banner_heading{
+    color: var(--white);
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.banner_description{
+    color:var(--white);
+}
+
+.banner_input{
+    position: absolute;
+    top: 65%;
+    left: 29%;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.banner_input input{
+    border: none;
+    outline: none;
+    padding:1rem;
+    border-radius: 0.5rem;
+}
+
+.banner_input .find{
+    background: var(--primary-color);
+}
+
+.banner_input .find::placeholder{
+    color: var(--white);
+}
 @media screen and (max-width:576px) {
     .navbar
     .nav_logo_forwording,
@@ -96,5 +146,28 @@ body{
 
     .navbar .hamber_btn{
         cursor:pointer;
+        display: block;
+    }
+
+    .banner_section{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .banner_text{
+        top: 15%;
+    }
+
+    .banner_heading{
+        font-size: 1.375rem;
+    }
+    .banner_description{
+        font-size: 0.875rem;
+        padding: 0 1rem;
+    }
+
+    .banner_input{
+        flex-direction: column;
+        top: 45%;
+        left: 40px;
     }
 }
