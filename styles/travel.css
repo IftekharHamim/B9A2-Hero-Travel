@@ -80,19 +80,18 @@ body{
 
 
                      /* banner-section-start */
-.banner_section{
-    background-image:url(/Images/banner\ img.png);
-    background-repeat: no-repeat;
-    background-position: center;
+.banner_section img{
     margin-top: 3.75rem;
     height: 600px;
     position: relative;
 }
 
 .banner_text{
+    color: black;
     text-align: center;
-    position: relative;
+    position: absolute;
     top: 30%;
+    left: 30%;
 }
 
 .banner_heading{
@@ -128,6 +127,49 @@ body{
 .banner_input .find::placeholder{
     color: var(--white);
 }
+                              /* banner-section-end */
+                              /* tour-section-start */
+
+.popular_tour{
+    display: flex;
+    margin-top: 6.25rem;
+    
+}
+
+.tour_heading{
+    color: var(--dark-color);
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.tour_title{
+    color: var(--rgb-color);
+    margin:2.5rem 0;
+}
+
+.tour_list1{
+    color: var(--rgb-color);
+    margin: 3rem 1.5rem;
+}
+
+.tour_description{
+    margin-top: 4rem;
+    color: var(--deepdark-color);
+}
+
+.btn_primary{
+    border-radius: 0.5rem;
+    margin-top: 4.5rem;
+    border: none;
+    padding: 1rem 2rem;
+    background: var(--primary-color);
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.tour_img img{
+    height: 540px;
+}
 @media screen and (max-width:576px) {
     .navbar
     .nav_logo_forwording,
@@ -149,12 +191,16 @@ body{
         display: block;
     }
 
-    .banner_section{
-        width: 80%;
-        margin: 0 auto;
+    .banner_section img{
+        width: 100%;
+        margin: 1.0625rem auto;
+        object-fit: cover;
+        border-radius:0.5rem;
     }
     .banner_text{
         top: 15%;
+        left: 10%;
+        right: 10%;
     }
 
     .banner_heading{
@@ -167,7 +213,15 @@ body{
 
     .banner_input{
         flex-direction: column;
-        top: 45%;
-        left: 22%;
+        top: 35%;
+        left: 30%;
+    }
+
+    .tour_img img{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .popular_tour{
+        flex-direction: column;
     }
 }
