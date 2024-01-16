@@ -373,6 +373,39 @@ body{
     font-weight: 800;
 }
 
+                         /* footer-start */
+.footer_section{
+    background: rgba(19, 19, 24, 0.05);
+    margin-top: 6.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6rem;
+}
+
+.footer_details h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.footer_description{
+    color: var(--deepdark-color);
+    margin-bottom: 2rem;
+}
+
+.footer_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.footer_copyright{
+    color: var(--dark-color);
+    font-weight: 300;
+}
 @media screen and (max-width:576px) {
     .navbar
     .nav_logo_forwording,
