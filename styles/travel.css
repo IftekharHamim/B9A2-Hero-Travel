@@ -170,6 +170,99 @@ body{
 .tour_img img{
     height: 540px;
 }
+                               /* tour-section-start */
+
+                               /* destinaton-start */
+
+.destination{
+    margin-top: 6.25rem;
+    text-align: center;
+}
+
+.destination_heading{
+    color: var(--dark-color);
+    font-weight: 800;
+    font-size: 2.5rem;
+
+}
+
+.destination_description{
+    margin-top: 1.5rem;
+    color: var(--rgb-color);
+}
+
+.destination_image{
+    gap: 5px;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: 500px repeat(3,1fr);
+}
+.destination_image img{
+    width: 100%;
+}
+                                    /* destinaton-start */
+.location{
+    margin-top: 6.25rem;
+    text-align: center;
+}
+
+.location_heading{
+    color: var(--dark-color);
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.location_title{
+    margin-top: 1.5rem;
+    color: var(--rgb-color);
+}
+                                /* destinaton-start */
+
+.location_box{
+    margin-top:3rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border-radius: 16px;
+    gap: 1.5rem;
+}
+.box1{
+    border-radius: 1rem;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    text-align: left;
+    padding: 1.5rem;
+}
+.box1 .box_heading,
+.box2 .box_heading,
+.box3 .box_heading{
+    margin: 2rem 0;
+    color: var(--dark-color);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.box1 .box_title,
+.box2 .box_title,
+.box3 .box_title{
+    color: var(--deepdark-color);
+    line-height: 2rem;
+}
+.box2{
+    padding: 1.5rem;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    text-align: left;
+}
+
+.box3{
+    position: relative;
+    left: 50%;
+    border-radius: 1rem;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    text-align: left;
+    padding: 1.5rem;
+}
 @media screen and (max-width:576px) {
     .navbar
     .nav_logo_forwording,
@@ -223,5 +316,29 @@ body{
     }
     .popular_tour{
         flex-direction: column;
+    }
+    .tour_heading{
+        font-size: 1.25rem;
+    }
+    .tour_list1,
+    .tour_title,
+    .tour_description{
+        font-size: 0.875rem;
+    }
+
+    .location_box{
+        grid-template-columns: 1fr;
+    }
+    .location_heading{
+        font-size: 1.25rem;
+        font-weight: 800;
+    }
+
+    .location_title{
+        font-size: 1rem;
+    }
+
+    .box3{
+       left: -1.2%;
     }
 }
